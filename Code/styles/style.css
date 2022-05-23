@@ -251,14 +251,18 @@ img{
   margin-bottom: 19px;
 }
 
-#video{
-  
-
+.video{
+  display: flex;
+  position: absolute;
+  left: 265px;
+  height: 439px;
+  width: 783px;
+  background: linear-gradient(rgba(122, 73, 27, 0.5),rgba(82, 39, 20, 0.658) 100%), url('/imgs/fundo.png');
 }
 #tit-video{
-  position: relative;
-  top: -404px;
-  left: 32px;
+  position: absolute;
+  top: 196px;
+  left: 297px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
