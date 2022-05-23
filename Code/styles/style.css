@@ -204,6 +204,7 @@ img{
   right: 19px;
   bottom: 11px;
   color: rgba(255, 255, 255, 1);
+  user-select: none;
 }
 /*Corpo do Texto*/
 
@@ -251,7 +252,7 @@ img{
   margin-bottom: 19px;
 }
 
-.video{
+#video{
   display: flex;
   position: absolute;
   left: 265px;
@@ -259,6 +260,12 @@ img{
   width: 783px;
   background: linear-gradient(rgba(122, 73, 27, 0.5),rgba(82, 39, 20, 0.658) 100%), url('/imgs/fundo.png');
 }
+
+#video:hover{
+  background: linear-gradient(rgba(172, 150, 150, 0.5),rgba(124, 103, 94, 0.658) 100%), url('/imgs/fundo.png');
+  cursor:pointer;
+} 
+
 #tit-video{
   position: absolute;
   top: 196px;
@@ -272,7 +279,49 @@ img{
   max-width: 734px;
   color: #FFFFFF;
 }
-
+#u-pic-video img{
+  position: absolute;
+  top: 466px;
+  left: 300px;
+  border: 1px solid rgba(237, 120, 57, 1);
+  border-radius: 40px;
+}
+#u-pic-video img:hover{
+  -moz-transform:scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor:pointer;
+}
+.c-video{
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  top: 472px;
+  left: 397px;
+}
+.c-video:hover{
+  -moz-transform:scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor:pointer;
+}
+#v-name{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 25px;
+  color: #FFFFFF;;
+}
+#v-universidade{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+  padding-top: 5px;
+}
 
 /*Segunda metade da seção*/
 
@@ -373,4 +422,51 @@ img{
   resize: none;
   border: none;
   margin: 15px;
+}
+
+/* Segunda seção */
+
+.second-section{
+  display: flex;
+  height: auto;
+  margin-left: 43px;
+  margin-top: 30px;
+}
+.Description-Box2{
+  width: 1058px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  border: 1px solid #ECECEC;
+  margin-top: 30px;
+}
+.box-description{
+  margin: 15px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em; 
+  color: #5C5C5C;
+  margin: 15px;
+}
+.VerMais{
+  margin: 0%;
+  border: none;
+  background: none;
+  color: #ED7839;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+#Hidden-Text{
+  display: none;
 }
